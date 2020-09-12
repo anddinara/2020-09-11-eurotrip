@@ -1,0 +1,23 @@
+.site-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.site-list__item {
+
+}
+
+.site-list__link {
+  display: block;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-left: 45px;
+  padding-right: 45px;
+  text-decoration: none;
+}
