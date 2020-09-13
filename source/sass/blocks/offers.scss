@@ -9,6 +9,26 @@
   width: 100%;
 }
 
+.offers__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+  color: #2c2e3f;
+  width: 33%;
+  margin-left: 15px;
+  letter-spacing: -1.245px;
+}
+
+.offers__description {
+  width: 33%;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  margin-left: 15px;
+  margin-bottom: 55px;
+}
+
 .offers__list {
   display: flex;
   flex-wrap: wrap;
@@ -20,10 +40,20 @@
 .offers__item {
   position: relative;
   margin: auto;
+  margin-bottom: 100px;
 }
 
 .offers__name {
   position: absolute;
+  bottom: 4px;
+  padding: 16px 62px 16px 62px;
+  right: 25%;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: -0.415px;
 
   background-color: #ffffff;
 }

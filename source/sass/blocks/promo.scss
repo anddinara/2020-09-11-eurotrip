@@ -6,6 +6,8 @@
   background-repeat: no-repeat;
   background-position: center 0;
   background-size: auto 860px;
+
+  margin-bottom: 155px;
 }
 
 .promo__wrapper {
@@ -20,7 +22,28 @@
 }
 
 .promo__info {
-  align-items: center;
-  width: 50%;
+  width: 40%;
+  align-self: flex-start;
+  margin-top: 15.5%;
+}
+
+.promo__title {
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.promo__description {
+  width: 72%;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 170%;
+  color: #ffffff;
+
+  margin-bottom: 40px;
 }
 

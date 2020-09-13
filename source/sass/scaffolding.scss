@@ -1,4 +1,37 @@
+@font-face {
+  font-weight: normal;
+  font-family: "Montserrat";
+  font-style: normal;
+  src: url("../fonts/Montserrat-Light.woff") format("woff");
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: "Montserrat";
+  font-style: normal;
+  src: url("../fonts/Montserrat-Bold.woff") format("woff");
+}
+
 body {
   margin: 0 auto;
   padding: 0;
+
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+}
+
+.button {
+  display: block;
+  font-size: 12px;
+  line-height: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: bold;
+  width: 260px;
+  align-items: center;
+  letter-spacing: 2px;
+
+  padding: 30px 40px 30px 40px;
+  background-color: #fe7865;
 }

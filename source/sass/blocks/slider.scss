@@ -5,6 +5,20 @@
   flex-direction: row;
 }
 
+.slider__toggle {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(44, 46, 63, 0.3);
+  letter-spacing: -0.415px;
+  text-align: center;
+
+  border: 0;
+  background-color: #ffffff;
+}
+
 .slider__info {
   width: 370px;
 }
