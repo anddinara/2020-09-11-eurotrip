@@ -1,0 +1,15 @@
+.slider__wrapper {
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.slider__info {
+  width: 370px;
+}
+
+.slider__block {
+  position: absolute;
+  right: 0px;
+}
