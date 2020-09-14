@@ -2,8 +2,40 @@
   width: 382px;
   min-height: 367px;
 
-  background-color: red;
-  /*убрать*/
+  background-color: #ffffff;
+}
+
+.review__title {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: -0.691667px;
+  color: #2c2e3f;
+  margin-left: 30px;
+}
+
+.review__text {
+  margin-left: 30px;
+
+  font-size: 14px;
+  line-height: 28px;
+
+  letter-spacing: -0.408333px;
+
+  color: rgba(44, 46, 63, 0.7);
+}
+
+.review__author {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+
+  letter-spacing: -0.466667px;
+
+  color: #2c2e3f;
+  margin-left: 100px;
 }
 
 .reviews__wrapper {

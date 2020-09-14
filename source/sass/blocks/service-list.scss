@@ -1,0 +1,50 @@
+.service-list {
+  position: relative;
+
+  background: #ffffff;
+  border: 1px solid rgba(44, 46, 63, 0.3);
+  box-sizing: border-box;
+  border-radius: 6px;
+  width: 370px;
+  margin-right: 30px;
+  margin-left: 10px;
+}
+
+.service-list__title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+
+  display: flex;
+  align-items: center;
+
+  letter-spacing: -1.27273px;
+
+  color: rgba(20, 21, 23, 0.7);
+
+  margin-left: 30px;
+}
+
+.service-list__cost {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 25px;
+  line-height: 34px;
+
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  text-align: right;
+
+  color: rgba(20, 21, 23, 0.7);
+}
+
+.service-list__text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #2c2e3f;
+  margin-left: 30px;
+}
