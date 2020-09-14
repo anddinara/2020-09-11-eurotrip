@@ -16,10 +16,10 @@
         <nav class="main-nav">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a class="site-list__link" href="">О путешествии</a>
+              <a class="site-list__link" href="#travel">О путешествии</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="">Цены</a>
+              <a class="site-list__link" href="#prices">Цены</a>
             </li>
           </ul>
         </nav>
@@ -33,7 +33,7 @@
         <section class="promo__info">
           <h1 class="promo__title">Путешествие по Европе</h1>
           <p class="promo__description">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.</p>
-          <a class="promo__button button" href="">Смотреть тур</a>
+          <a class="promo__button button" href="#offers">Смотреть тур</a>
         </section>
       </div>
     </section>
@@ -41,40 +41,55 @@
       <div class="page-main__wrapper">
         <section class="offers">
           <div class="offers__info">
-            <h2 class="offers__title">Места посещения</h2>
+            <h2 class="offers__title" id="travel">Места посещения</h2>
             <p class="offers__description">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
           </div>
           <div class="offers__list">
             <div class="offers__item">
               <span class="offers__name">Греция</span>
-              <img class="offers__img" src="img/desktop-offers-greece.png" width="350" height="430">
+              <img class="offers__img" src="img/offers-greece-desktop.png" width="350" height="430" alt="Греция">
+              <div class="offers__shape">
+                <a class="offers__button" href="#greece">Смотреть подробнее</a>
+              </div>
             </div>
             <div class="offers__item">
               <span class="offers__name">Албания</span>
-              <img class="offers__img" src="img/desktop-offers-greece.png" width="350" height="430">
+              <img class="offers__img" src="img/offers-albania-desktop.png" width="350" height="430" alt="Албания">
+              <div class="offers__shape">
+                <a class="offers__button" href="#albania">Смотреть подробнее</a>
+              </div>
             </div>
             <div class="offers__item">
               <span class="offers__name">Македония</span>
-              <img class="offers__img" src="img/desktop-offers-greece.png" width="350" height="430">
+              <img class="offers__img" src="img/offers-macedonia-desktop.png" width="350" height="430" alt="Македония">
+              <div class="offers__shape">
+                <a class="offers__button" href="#macedonia">Смотреть подробнее</a>
+              </div>
             </div>
             <div class="offers__item">
               <span class="offers__name">Черногория</span>
-              <img class="offers__img" src="img/desktop-offers-greece.png" width="350" height="430">
+              <img class="offers__img" src="img/offers-montenegro-desktop.png" width="350" height="430" alt="Черногория">
+              <div class="offers__shape">
+                <a class="offers__button" href="#montenegro">Смотреть подробнее</a>
+              </div>
             </div>
             <div class="offers__item">
               <span class="offers__name">Хорватия</span>
-              <img class="offers__img" src="img/desktop-offers-greece.png" width="350" height="430">
+              <img class="offers__img" src="img/offers-croatia-desktop.png" width="350" height="430" alt="Хорватия">
+              <div class="offers__shape">
+                <a class="offers__button" href="#croatia">Смотреть подробнее</a>
+              </div>
             </div>
           </div>
         </section>
         <section class="reviews">
           <div class="reviews__wrapper slider">
-            <p class="reviews__toggles slider__toggles">
-              <a class="slider__toggle slider__toggle--greece">Греция</a>
-              <a class="slider__toggle slider__toggle--albania">Албания</a>
-              <a class="slider__toggle slider__toggle--macedonia">Македония</a>
-              <a class="slider__toggle slider__toggle--montenegro">Черногория</a>
-              <a class="slider__toggle slider__toggle--croatia">Хорватия</a>
+            <p class="reviews__toggles slider__toggles" id="offers">
+              <a class="slider__toggle slider__toggle--greece" id="greece">Греция</a>
+              <a class="slider__toggle slider__toggle--albania" id="albania">Албания</a>
+              <a class="slider__toggle slider__toggle--macedonia" id="macedonia">Македония</a>
+              <a class="slider__toggle slider__toggle--montenegro" id="montenegro">Черногория</a>
+              <a class="slider__toggle slider__toggle--croatia" id="croatia">Хорватия</a>
             </p>
             <div class="slider__wrapper">
               <div class="slider__info">
@@ -93,9 +108,9 @@
         </section>
         <section class="prices">
           <div class="prices__info">
-            <h2 class="prices__title">Цены</h2>
+            <h2 class="prices__title" id="prices">Цены</h2>
             <p class="prices__text">Специально для Вас  мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%!</p>
-            <span class="prices__contact">Свяжитесь с нами</span>
+            <span class="prices__contact">Свяжитесь с нами</span><br>
             <a class="prices__tel" href="">+7 (499)-784-684-46</a>
           </div>
           <section class="prices__description service-list">
@@ -125,7 +140,7 @@
           </section>
         </section>
         <section class="feedback">
-          <img class="feedback__img" src="">
+          <img class="feedback__img" src="img/feedback-desktop.jpg" width="844" height="455" alt="Пейзаж">
           <div class="feedback__block">
             <h3 class="feedback__title">У Вас остались вопросы?</h3>
             <p class="feedback__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
@@ -143,27 +158,29 @@
       <div class="page-footer__wrapper">
         <section class="page-footer__offers more-offers">
           <h3 class="more-offers__title">Следующие путешествия</h3>
-          <ul class="more-offers__list">
-            <li class="more-offers__item">Марсель</li>
-            <li class="more-offers__item">Ним</li>
-            <li class="more-offers__item">Монпелье</li>
-            <li class="more-offers__item">Барселона</li>
-            <li class="more-offers__item">Пальма</li>
-          </ul>
-          <ul class="more-offers__list">
-            <li class="more-offers__item">Сардиния</li>
-            <li class="more-offers__item">Палермо</li>
-            <li class="more-offers__item">Катания</li>
-            <li class="more-offers__item">Неаполь</li>
-            <li class="more-offers__item">Неаполь</li>
-          </ul>
-          <ul class="more-offers__list">
-            <li class="more-offers__item">Корс</li>
-            <li class="more-offers__item">Ницца</li>
-            <li class="more-offers__item">Монако</li>
-            <li class="more-offers__item">Динь-ле-Бен</li>
-            <li class="more-offers__item">Гренобль</li>
-          </ul>
+          <div class="more-offers__wrapper">
+            <ul class="more-offers__list">
+              <li class="more-offers__item">Марсель</li>
+              <li class="more-offers__item">Ним</li>
+              <li class="more-offers__item">Монпелье</li>
+              <li class="more-offers__item">Барселона</li>
+              <li class="more-offers__item">Пальма</li>
+            </ul>
+            <ul class="more-offers__list">
+              <li class="more-offers__item">Сардиния</li>
+              <li class="more-offers__item">Палермо</li>
+              <li class="more-offers__item">Катания</li>
+              <li class="more-offers__item">Неаполь</li>
+              <li class="more-offers__item">Рим</li>
+            </ul>
+            <ul class="more-offers__list">
+              <li class="more-offers__item">Корс</li>
+              <li class="more-offers__item">Ницца</li>
+              <li class="more-offers__item">Монако</li>
+              <li class="more-offers__item">Динь-ле-Бен</li>
+              <li class="more-offers__item">Гренобль</li>
+            </ul>
+          </div>
         </section>
         <section class="page-footer__contacts contacts">
           <h3 class="contacts__title">Наши контакты</h3>

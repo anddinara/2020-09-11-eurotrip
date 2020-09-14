@@ -12,22 +12,23 @@
 .site-list__item {
 
 }
-
+/*готова*/
 .site-list__link {
   display: block;
   padding-top: 44px;
+  padding-right: 20px;
   padding-bottom: 35px;
   padding-left: 20px;
-  padding-right: 20px;
-  text-decoration: none;
 
   font-size: 14px;
   font-style: normal;
   line-height: 17px;
   font-weight: 500;
   color: #141517;
-}
 
+  text-decoration: none;
+}
+/*готова*/
 .site-list__link[href] {
   &:hover {
     color: #fe7865;

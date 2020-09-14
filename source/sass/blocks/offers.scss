@@ -33,13 +33,13 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: space-around;
 
   width: 100%;
 }
 
 .offers__item {
   position: relative;
-  margin: auto;
   margin-bottom: 100px;
 }
 
@@ -56,4 +56,40 @@
   letter-spacing: -0.415px;
 
   background-color: #ffffff;
+
+  z-index: 3;
+}
+
+.offers__shape {
+  display: none;
+  position: absolute;
+  top: 0px;
+  width: 350px;
+  height: 430px;
+  background-color: rgba(20, 21, 23, 0.6);
+  z-index: 1;
+}
+
+.offers__item:hover .offers__shape{
+  display: block;
+}
+
+.offers__button {
+  position: absolute;
+  top: 45%;
+  left: 15%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 30px 20px 30px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-sizing: border-box;
+
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: #ffffff;
 }

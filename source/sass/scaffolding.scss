@@ -34,4 +34,12 @@ body {
 
   padding: 30px 40px 30px 40px;
   background-color: #fe7865;
+
+  &:hover {
+    background-color: #f17d4b;
+  }
+
+  &:active {
+    background-color: #f17d4b;
+  }
 }

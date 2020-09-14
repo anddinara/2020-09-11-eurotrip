@@ -1,0 +1,24 @@
+.more-offers__wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.more-offers__title {
+  margin-bottom: 25px;
+}
+
+.more-offers__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-right: 50px;
+}
+
+.more-offers__item {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(20, 21, 23, 0.5);
+  margin-bottom: 10px;
+}
