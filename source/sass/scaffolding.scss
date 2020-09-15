@@ -2,7 +2,7 @@
   font-weight: normal;
   font-family: "Montserrat";
   font-style: normal;
-  src: url("../fonts/Montserrat-Light.woff") format("woff");
+  src: url("../fonts/Montserrat-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -12,12 +12,42 @@
   src: url("../fonts/Montserrat-Bold.woff") format("woff");
 }
 
+@font-face {
+  font-weight: normal;
+  font-family: "Poppins";
+  font-style: normal;
+  src: url("../fonts/Poppins-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: "Poppins";
+  font-style: normal;
+  src: url("../fonts/Poppins-Bold.woff") format("woff");
+}
+
 body {
   margin: 0 auto;
   padding: 0;
 
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .button {
@@ -43,3 +73,4 @@ body {
     background-color: #f17d4b;
   }
 }
+

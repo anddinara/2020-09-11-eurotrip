@@ -11,19 +11,31 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="logo">
-          <img class="logo-image" src="img/logo-desktop.svg" width="57" height="22" alt="Way">
+          <picture>
+            <source media="(max-width: 768px)" srcset="img/logo-mobile.svg">
+            <source media="(max-width: 1024px)" srcset="img/logo-tablet.svg">
+            <img class="logo-image" src="img/logo-desktop.svg" width="57" height="22" alt="Way">
+          </picture>
         </a>
-        <nav class="main-nav">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="#travel">О путешествии</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#prices">Цены</a>
-            </li>
-          </ul>
+        <nav class="main-nav main-nav--closed">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a class="site-list__link" href="#travel">О путешествии</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="#prices">Цены</a>
+              </li>
+            </ul>
+          </div>
         </nav>
         <div class="page-header-contacts info-contacts">
+
+          <svg class="info-contacts__icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7.39635 8.62432C7.31179 7.42623 7.57753 6.24606 8.28114 5.29684C8.89115 4.43632 9.68536 3.96636 10.6426 3.69172C11.4489 3.4525 11.9774 3.74561 12.2099 4.64204C12.5421 5.98224 13.0162 7.3225 13.1884 8.73361C13.2427 9.35485 12.8411 10.2332 12.4062 10.6856C11.3161 11.7589 11.5426 12.5399 12.37 14.1643C12.6267 14.6881 13.0344 15.5934 13.8286 16.7919C14.656 17.9992 15.0939 18.6472 16.1569 18.0975C17.3376 17.5035 18.1983 17.8855 19.0891 18.8444C19.6931 19.5369 20.3574 20.1318 20.9614 20.8243C21.8341 21.8542 21.7949 22.5641 21.1124 23.2915C19.8833 24.6309 17.854 25.0736 16.3441 24.1766C15.5106 23.6881 14.6802 23.0487 14.0188 22.303C11.1047 18.9825 9.00291 15.1212 7.73759 10.7632C7.53526 10.0265 7.44165 9.28104 7.39635 8.62432Z" stroke="#FE8978" stroke-width="2" stroke-miterlimit="10"/>
+          </svg>
+
           <a class="info-contacts__tel" href="">+7 (499)-784-684-46</a>
         </div>
       </div>
@@ -33,7 +45,14 @@
         <section class="promo__info">
           <h1 class="promo__title">Путешествие по Европе</h1>
           <p class="promo__description">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.</p>
-          <a class="promo__button button" href="#offers">Смотреть тур</a>
+          <a class="promo__button button" href="#offers">Смотреть тур
+
+            <svg class="promo__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 1V15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M15 8L8 15L1 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+
+          </a>
         </section>
       </div>
     </section>
@@ -82,63 +101,70 @@
             </div>
           </div>
         </section>
-        <section class="reviews">
-          <div class="reviews__wrapper slider">
-            <p class="reviews__toggles slider__toggles" id="offers">
-              <a class="slider__toggle slider__toggle--greece" id="greece">Греция</a>
-              <a class="slider__toggle slider__toggle--albania" id="albania">Албания</a>
-              <a class="slider__toggle slider__toggle--macedonia" id="macedonia">Македония</a>
-              <a class="slider__toggle slider__toggle--montenegro" id="montenegro">Черногория</a>
-              <a class="slider__toggle slider__toggle--croatia" id="croatia">Хорватия</a>
-            </p>
-            <div class="slider__wrapper">
-              <div class="slider__info">
-                <h2 class="slider__title">Греция</h2>
-                <p class="slider__text">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.</p>
-                <button class="slider__button button">Купить тур сейчас</button>
-              </div>
-              <img class="slider__img" src="img/desktop-slider-greece.png" width="430" height="596" alt="Греция">
-              <div class="slider__block review">
-                <h3 class="review__title">Отзывы</h3>
-                <p class="review__text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света!</p>
-                <span class="review__author">Влада Голицина</span>
+        <div class="container">
+          <section class="reviews">
+            <div class="reviews__wrapper slider">
+              <p class="reviews__toggles slider__toggles" id="offers">
+                <a class="slider__toggle slider__toggle--greece slider__toggle--active" id="greece">Греция</a>
+                <a class="slider__toggle slider__toggle--albania" id="albania">Албания</a>
+                <a class="slider__toggle slider__toggle--macedonia" id="macedonia">Македония</a>
+                <a class="slider__toggle slider__toggle--montenegro" id="montenegro">Черногория</a>
+                <a class="slider__toggle slider__toggle--croatia" id="croatia">Хорватия</a>
+              </p>
+              <div class="slider__wrapper">
+                <div class="slider__info">
+                  <h2 class="slider__title">Греция</h2>
+                  <p class="slider__text">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.</p>
+                  <button class="slider__button button">Купить тур сейчас</button>
+                </div>
+                <img class="slider__img" src="img/desktop-slider-greece.png" width="430" height="596" alt="Греция">
+                <div class="slider__block review">
+                  <div class="review-wrapper">
+                    <h3 class="review__title">Отзывы</h3>
+                    <p class="review__text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света!</p>
+                    <div class="author">
+                      <img class="author__photo" src="img/photo-author-1.jpg">
+                      <span class="author__name">Влада Голицина</span>
+                  </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
-        <section class="prices">
-          <div class="prices__info">
-            <h2 class="prices__title" id="prices">Цены</h2>
-            <p class="prices__text">Специально для Вас  мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%!</p>
-            <span class="prices__contact">Свяжитесь с нами</span><br>
-            <a class="prices__tel" href="">+7 (499)-784-684-46</a>
-          </div>
-          <section class="prices__description service-list">
-            <h3 class="service-list__title">Комплексный</h3>
-            <span class="service-list__cost">$1999</span>
-            <p class="service-list__text">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
-            <ul class="service-list__list">
-              <li class="service-list__item">Разработанный маршрут с гидом группы</li>
-              <li class="service-list__item">Перелет, трансфер и проживание в отелях</li>
-              <li class="service-list__item">Завтраки, ужины в отелях и ланчи на природе</li>
-              <li class="service-list__item">Экскурсии по удивительно красивым местам Европы</li>
-            </ul>
-            <button class="service-list__button button">Купить тур сейчас</button>
           </section>
-          <section class="prices__description service-list">
-            <h3 class="service-list__title">Экономный</h3>
-            <span class="service-list__cost">$1399</span>
-            <p class="service-list__text">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
-            <ul class="service-list__list">
-              <li class="service-list__item">Разработанный маршрут с гидом группы</li>
-              <li class="service-list__item">Перелет и трансфер</li>
-              <li class="service-list__item">Проживание в хостелах при отелях</li>
-              <li class="service-list__item">Только завтраки в отелях</li>
-              <li class="service-list__item">Экскурсии по удивительно красивым местам Европы</li>
-            </ul>
-            <button class="service-list__button button">Купить тур сейчас</button>
+          <section class="prices">
+            <div class="prices__info">
+              <h2 class="prices__title" id="prices">Цены</h2>
+              <p class="prices__text">Специально для Вас  мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%!</p>
+              <span class="prices__contact">Свяжитесь с нами</span><br>
+              <a class="prices__tel" href="">+7 (499)-784-684-46</a>
+            </div>
+            <section class="prices__description service-list">
+              <h3 class="service-list__title">Комплексный</h3>
+              <span class="service-list__cost">$1999</span>
+              <p class="service-list__text">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
+              <ul class="service-list__list">
+                <li class="service-list__item">Разработанный маршрут с гидом группы</li>
+                <li class="service-list__item">Перелет, трансфер и проживание в отелях</li>
+                <li class="service-list__item">Завтраки, ужины в отелях и ланчи на природе</li>
+                <li class="service-list__item">Экскурсии по удивительно красивым местам Европы</li>
+              </ul>
+              <button class="service-list__button button">Купить тур сейчас</button>
+            </section>
+            <section class="prices__description service-list">
+              <h3 class="service-list__title">Экономный</h3>
+              <span class="service-list__cost">$1399</span>
+              <p class="service-list__text">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
+              <ul class="service-list__list">
+                <li class="service-list__item">Разработанный маршрут с гидом группы</li>
+                <li class="service-list__item">Перелет и трансфер</li>
+                <li class="service-list__item">Проживание в хостелах при отелях</li>
+                <li class="service-list__item">Только завтраки в отелях</li>
+                <li class="service-list__item">Экскурсии по удивительно красивым местам Европы</li>
+              </ul>
+              <button class="service-list__button button">Купить тур сейчас</button>
+            </section>
           </section>
-        </section>
+        </div>
         <section class="feedback">
           <img class="feedback__img" src="img/feedback-desktop.jpg" width="844" height="455" alt="Пейзаж">
           <div class="feedback__block">

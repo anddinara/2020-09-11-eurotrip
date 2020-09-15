@@ -10,6 +10,7 @@
 }
 
 .offers__title {
+  position: relative;
   font-style: normal;
   font-weight: 600;
   font-size: 55px;
@@ -18,6 +19,19 @@
   width: 33%;
   margin-left: 15px;
   letter-spacing: -1.245px;
+}
+
+.offers__title::before {
+  content: "";
+
+  position: absolute;
+  bottom: -31px;
+  left: 0px;
+
+  width: 228.51px;
+  height: 4px;
+
+  background-color: #fe7865;
 }
 
 .offers__description {
@@ -46,8 +60,9 @@
 .offers__name {
   position: absolute;
   bottom: 4px;
-  padding: 16px 62px 16px 62px;
-  right: 25%;
+  padding: 16px 16px 16px 16px;
+  right: calc(50% - 125px);
+  min-width: 215px;
 
   font-weight: 500;
   font-size: 24px;
@@ -76,7 +91,7 @@
 
 .offers__button {
   position: absolute;
-  top: 45%;
+  top: 40%;
   left: 15%;
   font-style: normal;
   font-weight: 500;

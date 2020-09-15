@@ -1,7 +1,18 @@
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  background-image: url("../img/map-desktop.png");
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+
 .reviews {
   margin-bottom: 250px;
 }
 
+.reviews__wrapper {
+  margin-top: -20px;
+}
 
 .review {
   width: 382px;
@@ -11,38 +22,35 @@
 }
 
 .review__title {
+  position: relative;
   font-weight: 500;
   font-size: 30px;
   line-height: 37px;
   letter-spacing: -0.691667px;
   color: #2c2e3f;
   margin-left: 30px;
+  margin-bottom: 35px;
+}
+
+.review__title::before {
+  content: "";
+  position: absolute;
+
+  bottom: -14px;
+  left: 0px;
+
+  width: 68px;
+  height: 1px;
+
+  background-color: #fe7865;
 }
 
 .review__text {
   margin-left: 30px;
-
   font-size: 14px;
   line-height: 28px;
-
   letter-spacing: -0.408333px;
-
   color: rgba(44, 46, 63, 0.7);
+  margin-bottom: 30px;
 }
 
-.review__author {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-
-  letter-spacing: -0.466667px;
-
-  color: #2c2e3f;
-  margin-left: 100px;
-}
-
-.reviews__wrapper {
-  margin-top: -20px;
-}
