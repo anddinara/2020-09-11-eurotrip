@@ -4,11 +4,18 @@
 
   background: #ffffff;
   border: 1px solid rgba(44, 46, 63, 0.3);
-  box-sizing: border-box;
+  box-sizing: padding-box;
+  /*box-sizing: border-box;*/
   border-radius: 6px;
   width: 370px;
   margin-right: 19px;
   margin-left: 13px;
+}
+
+.service-list:hover {
+  border: 3px solid #fe7865;
+  box-sizing: content-box;
+  /*box-sizing: padding-box;*/
 }
 
 .service-list__title {

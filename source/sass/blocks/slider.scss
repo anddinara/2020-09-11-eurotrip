@@ -33,18 +33,38 @@
   flex-direction: row;
   justify-content: space-between;
 
-  margin-left: 15px;
+  margin-left: 50px;
 }
 
 .slider__toggle--active {
   color: #fe7865;
 }
 
+.slider__wrapper--greece {
+
+}
+
+.slider__wrapper--albania {
+  display: none;
+}
+
+.slider__wrapper--macedonia {
+  display: none;
+}
+
+.slider__wrapper--montenegro {
+  display: none;
+}
+
+.slider__wrapper--croatia {
+  display: none;
+}
+
 .slider__info {
   position: relative;
 
   width: 30%;
-  margin-left: 10px;
+  margin-left: 50px;
 }
 
 .slider__title {
@@ -90,7 +110,7 @@
 .slider__block {
   position: absolute;
   top: 150px;
-  right: 16px;
+  right: 20%;
 }
 
 .slider__button {
