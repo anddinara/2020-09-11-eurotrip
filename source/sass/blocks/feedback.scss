@@ -1,16 +1,14 @@
 .feedback {
   position: relative;
   margin-bottom: 150px;
-}
-
-.feedback__img {
-  margin-left: 30px;
+  margin-left: 50px;
 }
 
 .feedback__block {
   position: absolute;
-  top: 25%;
-  right: 0px;
+  top: 15%;
+  right: calc(35% - 328px);
+  /*left: 328px;*/
   z-index: 2;
   width: 656px;
   background-color: #ffffff;
@@ -23,6 +21,8 @@
   font-weight: 600;
   font-size: 25px;
   line-height: 32px;
+  margin-top: 50px;
+  margin-bottom: 5px;
 
   text-align: center;
 
@@ -38,4 +38,31 @@
   text-align: center;
 
   color: #141517;
+}
+
+.feedback__input {
+  width: 269px;
+
+  padding-left: 14px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-right: 14px;
+  margin-bottom: 124px;
+
+  box-sizing: border-box;
+}
+
+.feedback__input:first-child {
+  margin-left: 50px;
+}
+
+.feedback__button {
+  position: absolute;
+  display: block;
+  border: none;
+  padding: 18px 20px 18px 20px;
+  box-sizing: border-box;
+  width: 176px;
+  bottom: 40px;
+  right: calc(50% - 88px);
 }

@@ -1,3 +1,18 @@
+.more-offers {
+  position: relative;
+}
+
+.more-offers::before {
+  position: absolute;
+  content: "";
+
+  height: 189px;
+  width: 1px;
+  right: 0px;
+  top: 20px;
+  background-color: #d7d9df;
+}
+
 .more-offers__wrapper {
   display: flex;
   flex-direction: row;
