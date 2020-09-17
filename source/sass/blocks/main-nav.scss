@@ -14,11 +14,15 @@
 
 @media (max-width: 1024px) {
   .main-nav__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-nav__wrapper {
     position: absolute;
 
     top: 20px;
   }
-
 
   .main-nav__toggle {
     position: absolute;
@@ -57,12 +61,12 @@
 
       position: absolute;
       top: 25px;
-      left: 12px;
+      right: 20px;
 
       width: 30px;
       height: 2px;
 
-      background-color: #221f1f;
+      background-color: rgba(20, 21, 23, 0.2);
     }
 
     &::before {
@@ -73,6 +77,14 @@
     &::after {
       transform: rotate(-45deg);
     }
+  }
+
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+
+  .main-nav--opened .site-list__item {
+    display: block;
   }
 }
 

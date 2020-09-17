@@ -110,3 +110,34 @@
 
   color: #ffffff;
 }
+
+@media (max-width: 1024px) {
+  .offers__info {
+    justify-content: center;
+  }
+
+  .offers__title {
+    width: 90%;
+    box-sizing: padding-box;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 150%;
+
+    text-align: center;
+
+    margin-right: 50px;
+  }
+
+  .offers__title::before {
+    display: none;
+  }
+
+  .offers__description {
+    width: 40%;
+    margin-right: 50px;
+    text-align: center;
+    align-self: center;
+  }
+}
