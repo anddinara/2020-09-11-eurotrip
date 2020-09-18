@@ -55,3 +55,12 @@
   margin-right: 30px;
 }
 
+@media (max-width: 1024px) {
+  .container {
+    background-image: none;
+  }
+
+  .reviews {
+    margin-bottom: 50px;
+  }
+}

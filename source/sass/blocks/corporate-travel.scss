@@ -10,3 +10,18 @@
 
   color: rgba(20, 21, 23, 0.5);
 }
+
+@media (max-width: 1024px) {
+  .corporate-travel {
+    margin-top: 50px;
+    margin-left: 0px;
+  }
+
+  .corporate-travel__title {
+    text-align: center;
+  }
+
+  .corporate-travel__description {
+    text-align: center;
+  }
+}

@@ -23,3 +23,17 @@
 .page-footer__corporate {
   width: 25%;
 }
+
+@media (max-width: 1024px) {
+  .page-footer__offers {
+    width: 50%;
+  }
+
+  .page-footer__contacts {
+    width: 30%;
+  }
+
+  .page-footer__corporate {
+    width: 90%;
+  }
+}
